@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;900&family=Poppins:wght@200;300;500;600;700;800&family=Work+Sans:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url("/img/back-image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding: 10px 10%;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    padding: 0px 10px;
+}
+nav img{
+    width: 140px;
+}
+.login-btn{
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.btn{
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(45deg,#df4881,#c430d7);
+    padding: 7px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.btn:hover{
+   background: linear-gradient(45deg,#df4882e0,#c330d7e0);
+}
+.icon{
+    display: none;
+}
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 70px;
+}
+.content p{
+    margin: 10px 0px 30px;
+    font-weight: 100;
+    animation-delay: 0.5s;
+}
+div .btn{
+    animation-delay: 1s;
+
+}
+.image{
+    width: 450px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+}
+.image.anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    transform: translateY(30px);
+    opacity:0 ;
+    animation: moveup 0.5s linear forwards ;
+}
+@keyframes moveup{
+    100%{
+        transform: translateY(0px);
+        opacity:1 ;
+    }
+}
+
+
+@media (max-width: 768px)
+{
+    nav ul {
+        display: none;
+    }
+    .icon{
+        display: block;
+    }
+    #buttons{
+        display: none;
+    }
+    .content{
+        margin-top: 100px;
+    }
+    .content h1{
+        font-size: 40px;
+    }
+    .image{
+        width: 70%;
+        position: static;
+        margin-top: 40px;
+    }
+}
